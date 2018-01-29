@@ -7,7 +7,7 @@ var expressJwt = require('express-jwt');
 var config = require('config.json');
 var MongoClient = require('mongodb').MongoClient;
 
-
+var database;
 
 
  MongoClient.connect("mongodb://acube:danDaniel@ds127802.mlab.com:27802/gachatt", function(err, db){
@@ -17,6 +17,7 @@ var MongoClient = require('mongodb').MongoClient;
     else{
         console.log(err);
     }
+  database=db;
 });
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
