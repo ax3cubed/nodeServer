@@ -10,7 +10,7 @@ var MongoClient = require('mongodb').MongoClient;
 
 
 
- MongoClient.connect("mongodb://localhost:27017/gachatt", function(err, db){
+ MongoClient.connect("mongodb://acube:danDaniel@ds127802.mlab.com:27802/gachatt", function(err, db){
    if(!err){
            console.log("gachatt server is connected");
     }
