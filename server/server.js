@@ -18,6 +18,13 @@ var database;
         console.log(err);
     }
   database=db;
+  
+  console.log("Database connection ready");
+
+  // Initialize the app.
+  var server = app.listen(process.env.PORT || 8080, function () {
+    var port = server.address().port;
+    console.log("App now running on port", port);
 });
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -56,7 +63,7 @@ app.use('/admin', require('./controllers/admin.controller'));
 app.use('/post', require('./controllers/post.controller'));
 app.use('/device', require('./controllers/device.controller'));
 // start server
-var port = process.env.NODE_ENV === 'production' ? 80 : 4002;
-var server = app.listen(port, function () {
-    console.log('Server listening on port ' + port);
-});
+//var port = process.env.NODE_ENV === 'production' ? 80 : 4002;
+//var server = app.listen(port, function () {
+ //   console.log('Server listening on port ' + port);
+//});
