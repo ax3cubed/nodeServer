@@ -58,7 +58,7 @@ app.use('/admin', require('./controllers/admin.controller'));
 app.use('/post', require('./controllers/post.controller'));
 app.use('/device', require('./controllers/device.controller'));
 // start server
-var port = process.env.NODE_ENV === 'production' ? 80 : 4002;
+var port = process.env.NODE_ENV === 'production' ? 1024  : 4002;
 var server = app.listen(port, function () {
  console.log('Server listening on port ' + port);
 });
