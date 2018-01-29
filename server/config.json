@@ -1,0 +1,8 @@
+﻿
+
+{
+    "connectionString": "mongodb://localhost:27017/gachatt",
+    "apiUrl": "http://localhost:4002",
+    "secret": "378gachatt378",
+    "audience":"4inUzz1sSo2rtIDJi2Butmbpoyg7IlWd"
+}
