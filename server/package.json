@@ -14,7 +14,7 @@
         "express-jwt": "^3.0.1",
         "jsonwebtoken": "^5.0.2",
         "lodash": "^3.10.0",
-        "mongodb": "^2.2.31",
+        "mongodb": "^3.1.13",
         "mongoskin": "^2.1.0",
         "q": "^1.4.1",
         "request": "^2.83.0",
